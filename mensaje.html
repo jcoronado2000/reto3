@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consumir api HTML</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</head>
+
+<body>
+    <div class="alto">
+        <H1>PROGRAMA PARA AUDITORIO</H1>
+    </div>
+    <div class="ancho">
+        <section class="form-register">
+                <h4>Registro de mensaje</h4>
+                <input class="controls" type="text" name="nombres" id="idme" placeholder="id">
+                <input class="controls" type="text" name="apellidos" id="mensaje" placeholder="mensaje">
+                <input class="botons" type="submit" value="Registrar" id="mensajebtn" onclick="peticionmensa()">
+        </section>
+    </div>
+    <div class="ancho">
+        <section class="form-register">
+                <h4>Actualizar mensaje</h4>
+                <input class="controls" type="text" name="nombres" id="idmensajeac" placeholder="id">
+                <input class="controls" type="text" name="apellidos" id="mensajeac" placeholder="mensaje">
+                <input class="botons" type="submit" value="Actualizar" onclick="peticionmensac()">
+        </section>
+    </div>
+    <div class="ancho">
+        <section class="form-register">
+                <h4>Borrar mensaje</h4>
+                <input class="controls" type="text" name="nombres" id="ideliminar" placeholder="id">
+                <input class="botons" type="submit" value="Eliminar" onclick="peticionmensajeeli()">
+        </section>
+    </div>
+    <div class="ancho cuadrodatos">
+        <section class="form-register">     
+        <input class="botons botonm" type="submit" value="Obtener datos" onclick="obtenermensaje()">
+        <button class="butones">
+            <a href="index.html">
+                Auditorio
+            </a>
+        </button>
+        <button class="butones">
+            <a href="clientes.html">
+                Clientes
+            </a>
+        </button>
+    </section>
+    </div>
+    <div class="ancho">
+        <section class="form-register">
+            <table  id="tabledats">
+
+            </table>
+        </section>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

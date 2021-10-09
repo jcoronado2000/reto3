@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consumir api HTML</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</head>
+
+<body>
+    <div class="alto">
+        <H1>PROGRAMA PARA AUDITORIO</H1>
+    </div>
+    <div class="ancho">
+        <section class="form-register">
+            <h4>Registro de auditorio</h4>
+            <input class="controls" type="text" id="id" placeholder="id">
+            <input class="controls" type="text" id="owner" placeholder="owner">
+            <input class="controls" type="text" id="capacity" placeholder="capacity">
+            <input class="controls" type="text" id="category_id" placeholder="category_id">
+            <input class="controls" type="text" id="name" placeholder="nombre">
+            <input class="botons" type="submit" value="Registrar" id="auditorio" onclick="peticionpos()">
+        </section>
+    </div>
+    <div class="ancho">
+        <section class="form-register">
+            <h4>Actualizar auditorio</h4>
+            <input class="controls" type="text" id="idaudiac" placeholder="id">
+            <input class="controls" type="text" id="owneraudiac" placeholder="owner">
+            <input class="controls" type="text" id="capacityaudiac" placeholder="capacity">
+            <input class="controls" type="text" id="category_idaudiac" placeholder="category_id">
+            <input class="controls" type="text" id="nombreaudiac" placeholder="nombre">
+            <input class="botons" type="submit" value="Actualizar" onclick="peticionaudiac()">
+        </section>
+    </div>
+    <div class="ancho">
+        <section class="form-register">
+            <h4>Eliminar auditorio</h4>
+            <input class="controls" type="text" name="nombres" id="ideliac" placeholder="id">
+            <input class="botons" type="submit" value="Eliminar" onclick="peticionauditoeli()">
+        </section>
+    </div>
+    <div class="ancho cuadrodatos">
+        <section class="form-register">
+        <input class="botons botonm" type="submit" value="Obtener datos" onclick="obtenerauditorio()">
+        <button class="butones">
+            <a href="clientes.html">
+                Clientes
+            </a>
+        </button>
+        <button class="butones">
+            <a href="mensaje.html">
+                Mensajes
+            </a>
+        </button>
+    </section>
+    </div>
+    <div class="ancho">
+        <section class="form-register">
+            <table  id="tabledatosaudi">
+
+            </table>
+        </section>
+    </div>
+
+    <!--<div id="informacion"></div>-->
+    <script src="script.js"></script>
+</body>
+
+</html>
